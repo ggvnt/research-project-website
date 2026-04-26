@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Avatar placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcfce7"/>
+      <stop offset="1" stop-color="#f0fdf4"/>
+    </linearGradient>
+    <linearGradient id="fg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16a34a"/>
+      <stop offset="1" stop-color="#14532d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" rx="36" fill="url(#bg)"/>
+
+  <!-- Simple user silhouette -->
+  <circle cx="300" cy="250" r="105" fill="url(#fg)" opacity="0.95"/>
+  <path d="M130 520c32-92 122-150 170-150s138 58 170 150" fill="url(#fg)" opacity="0.95"/>
+</svg>

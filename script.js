@@ -121,9 +121,9 @@ const formStatus = document.getElementById('form-status');
 
 // EmailJS Public Key (Free tier - for demo purposes)
 // Replace with your own EmailJS credentials for production
-const EMAILJS_PUBLIC_KEY = 'nmWUaQ9f36QEOvFM2';
-const SERVICE_ID = 'service_a5uxvsc';
-const TEMPLATE_ID = 'template_k2ydvce';
+const EMAILJS_PUBLIC_KEY = 'Y1yz3ej-t_f4SpNL_';
+const SERVICE_ID = 'service_qbyqnog';
+const TEMPLATE_ID = 'template_aqmglqm';
 
 if (typeof emailjs !== 'undefined') {
     emailjs.init({ 
