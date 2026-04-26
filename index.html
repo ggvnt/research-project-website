@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Smart Agriculture Assistant – AI-Powered System for Crop Health and Soil Monitoring | SLIIT Research Project 25-26J-389" />
-  <meta name="theme-color" content="#16a34a" />
-  <title>AgriSense | Smart Agriculture Assistant</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Smart Agriculture Assistant – AI-Powered System for Crop Health and Soil Monitoring | SLIIT Research Project 25-26J-389" />
+    <meta name="theme-color" content="#16a34a" />
+    <title>AgriSense | Smart Agriculture Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
-  <!-- Intro Loader -->
-  <div class="intro-loader" id="introLoader" aria-hidden="true">
-    <div class="intro-panel intro-panel-left"></div>
-    <div class="intro-panel intro-panel-right"></div>
-    <div class="intro-center">
-      <h1 class="intro-title">Agri<span>Sense</span></h1>
-      <p class="intro-subtitle">Smart Agriculture Research · SLIIT 2025</p>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="navbar">
-      <a href="#home" class="logo">
-        <div class="logo-icon">🌱</div>
-        Agri<span>Sense</span>
-      </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">☰</button>
-      <nav class="nav" id="navMenu" aria-label="Main navigation">
-        <a href="#home"       class="nav-link active">Home</a>
-        <a href="#domain"     class="nav-link">Research</a>
-        <a href="#objectives" class="nav-link">Objectives</a>
-        <a href="#milestones" class="nav-link">Milestones</a>
-        <a href="#documents"  class="nav-link">Documents</a>
-        <a href="#slides"     class="nav-link">Slides</a>
-        <a href="#about"      class="nav-link">Team</a>
-        <a href="#contact"    class="nav-link">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-dots"></div>
-    <div class="container">
-      <div class=" hero-content">
-        <div class="hero-text reveal centered">
-          <div class="hero-kicker">
-            <span class="pulse"></span>
-            IoT Research Group · IT4010 · 2025 July
-          </div>
-          <h1>
-            Smart Agriculture Assistant: <span class="hl">AI-Powered</span> System for
-            <span class="hl">Crop Health</span> &amp; Soil Monitoring
-          </h1>
-          <p class="hero-desc">
-            An integrated AI and IoT-based platform that automates crop health diagnostics and soil condition
-            monitoring, empowering small- and medium-scale Sri Lankan farmers with real-time, data-driven insights.
-          </p>
-          <div class="hero-actions">
-            <a href="#domain"    class="btn-hero btn-hero-primary">Explore Research ↓</a>
-            <a href="#documents" class="btn-hero btn-hero-secondary">View Documents</a>
-          </div>
-          <div class="hero-badges">
-            <span class="badge">🤖 Machine Learning</span>
-            <span class="badge">📡 IoT Sensors</span>
-            <span class="badge">🌿 Sri Lankan Agriculture</span>
-            <span class="badge">📱 Mobile &amp; Edge AI</span>
-          </div>
+    <!-- Intro Loader -->
+    <div class="intro-loader" id="introLoader" aria-hidden="true">
+        <div class="intro-panel intro-panel-left"></div>
+        <div class="intro-panel intro-panel-right"></div>
+        <div class="intro-center">
+            <h1 class="intro-title">Agri<span>Sense</span></h1>
+            <p class="intro-subtitle">Smart Agriculture Research · SLIIT 2025</p>
         </div>
+    </div>
 
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="hero-card">
-            <div class="hero-card-icon icon-green">🌱</div>
-            <h4>Crop Disease Detection</h4>
-            <p>AI-powered CNN model identifies plant diseases from leaf images with localized Sri Lankan dataset.</p>
-          </div>
-          <div class="hero-card">
-            <div class="hero-card-icon icon-amber">🌡️</div>
-            <h4>IoT Soil Monitoring</h4>
-            <p>Robotic arm with pH, moisture &amp; nutrient sensors transmits real-time field data to cloud.</p>
-          </div>
-          <div class="hero-card">
-            <div class="hero-card-icon icon-earth">🐛</div>
-            <h4>Pest Outbreak Prediction</h4>
-            <p>Predictive AI fuses images &amp; climate data to warn farmers before infestations occur.</p>
-          </div>
-          <div class="hero-card">
-            <div class="hero-card-icon icon-green">📊</div>
-            <h4>Growth Monitoring</h4>
-            <p>Grad-CAM explainable CNNs analyze crop photos and deliver voice alerts in local languages.</p>
-          </div>
-          <div class="hero-card hero-card-wide">
-            <div class="hero-stat-row">
-              <div class="hero-stat">
-                <h3>ML</h3>
-                <p>Image-based plant recognition workflow</p>
-              </div>
-              <div class="hero-stat">
-                <h3>AI</h3>
-                <p>Deep learning models</p>
-              </div>
-              <div class="hero-stat">
-                <h3>SL</h3>
-                <p>Focused on Sri Lankan medicinal plant species</p>
-              </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="navbar">
+            <a href="#home" class="logo">
+                <div class="logo-icon">🌱</div>
+                Agri<span>Sense</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="navMenu">☰</button>
+            <nav class="nav" id="navMenu" aria-label="Main navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#domain" class="nav-link">Research</a>
+                <a href="#objectives" class="nav-link">Objectives</a>
+                <a href="#milestones" class="nav-link">Milestones</a>
+                <a href="#documents" class="nav-link">Documents</a>
+                <a href="#slides" class="nav-link">Slides</a>
+                <a href="#about" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-dots"></div>
+        <div class="container">
+            <div class=" hero-content">
+                <div class="hero-text reveal centered">
+                    <div class="hero-kicker">
+                        <span class="pulse"></span>
+                        IoT Research Group · IT4010 · 2025 July
+                    </div>
+                    <h1>
+                        Smart Agriculture Assistant: <span class="hl">AI-Powered</span> System for
+                        <span class="hl">Crop Health</span> &amp; Soil Monitoring
+                    </h1>
+                    <p class="hero-desc">
+                        An integrated AI and IoT-based platform that automates crop health diagnostics and soil
+                        condition
+                        monitoring, empowering small- and medium-scale Sri Lankan farmers with real-time, data-driven
+                        insights.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#domain" class="btn-hero btn-hero-primary">Explore Research ↓</a>
+                        <a href="#documents" class="btn-hero btn-hero-secondary">View Documents</a>
+                    </div>
+                    <div class="hero-badges">
+                        <span class="badge">🤖 Machine Learning</span>
+                        <span class="badge">📡 IoT Sensors</span>
+                        <span class="badge">🌿 Sri Lankan Agriculture</span>
+                        <span class="badge">📱 Mobile &amp; Edge AI</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal" aria-hidden="true">
+                    <div class="hero-card">
+                        <div class="hero-card-icon icon-green">🌱</div>
+                        <h4>Crop Disease Detection</h4>
+                        <p>AI-powered CNN model identifies plant diseases from leaf images with localized Sri Lankan
+                            dataset.</p>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-icon icon-amber">🌡️</div>
+                        <h4>IoT Soil Monitoring</h4>
+                        <p>Robotic arm with pH, moisture &amp; nutrient sensors transmits real-time field data to cloud.
+                        </p>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-icon icon-earth">🐛</div>
+                        <h4>Pest Outbreak Prediction</h4>
+                        <p>Predictive AI fuses images &amp; climate data to warn farmers before infestations occur.</p>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-icon icon-green">📊</div>
+                        <h4>Growth Monitoring</h4>
+                        <p>Grad-CAM explainable CNNs analyze crop photos and deliver voice alerts in local languages.
+                        </p>
+                    </div>
+                    <div class="hero-card hero-card-wide">
+                        <div class="hero-stat-row">
+                            <div class="hero-stat">
+                                <h3>ML</h3>
+                                <p>Image-based plant recognition workflow</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>AI</h3>
+                                <p>Deep learning models</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>SL</h3>
+                                <p>Focused on Sri Lankan medicinal plant species</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- <div class="project-meta reveal">
+            <!-- <div class="project-meta reveal">
         <div class="meta-chip">
           <span class="meta-chip-label">Project ID</span>
           <span class="meta-chip-value">25-26J-389</span>
@@ -138,880 +149,975 @@
           <span class="meta-chip-value">SLIIT, Sri Lanka</span>
         </div>
       </div> -->
-    </div>
-  </section>
-
-  <!-- ===== RESEARCH DOMAIN ===== -->
-  <section class="section" id="domain">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Research Domain</span>
-        <h2 class="section-title">Problem, Gap &amp; Solution</h2>
-        <p class="section-subtitle">
-          Agriculture faces growing challenges from climate change, pest infestations, and declining soil quality.
-          This section explores the research background, identified gaps, and the solution our team proposes.
-        </p>
-      </div>
-
-      <div class="domain-grid">
-        <div class="domain-card reveal">
-          <details class="domain-dropdown">
-            <summary>
-              <!-- <span class="domain-icon">🔍</span> -->
-              Research Problem
-              <span class="domain-arrow">▼</span>
-            </summary>
-            <div class="domain-body">
-              <p>Agriculture faces growing challenges due to climate change, pest infestations, and declining soil quality, which directly affect crop productivity and farmers' livelihoods.</p>
-              <p>Traditional farming methods often rely on manual monitoring and subjective assessments, resulting in delayed detection of diseases and pests, inefficient soil management, and increased production costs.</p>
-              <p>Small- and medium-scale farmers lack affordable tools to access timely, data-driven insights to optimize their farming practices — a gap this project directly addresses.</p>
-            </div>
-          </details>
         </div>
+    </section>
 
-        <div class="domain-card reveal">
-          <details class="domain-dropdown">
-            <summary>
-              <!-- <span class="domain-icon">💡</span> -->
-              Proposed Solution
-              <span class="domain-arrow">▼</span>
-            </summary>
-            <div class="domain-body">
-              <p>The Smart Agriculture Assistant is a comprehensive AI-powered solution integrating three main modules: an IoT sensor network for soil data collection, an image recognition module for pest and disease detection, and a cloud-based data processing platform.</p>
-              <p>The system automates crop health diagnostics and soil condition monitoring, enabling real-time detection of pest infestations, diseases, and unfavorable soil pH levels — targeting high-value crops like pineapple but adaptable to various crops.</p>
-              <p>Farmers receive actionable insights through a user-friendly mobile or web dashboard, empowering them to make timely interventions and reduce crop losses.</p>
-            </div>
-          </details>
-        </div>
-
-        <div class="domain-card reveal">
-          <details class="domain-dropdown">
-            <summary>
-              <!-- <span class="domain-icon">🏗️</span> -->
-              System Architecture
-              <span class="domain-arrow">▼</span>
-            </summary>
-            <div class="domain-body">
-              <p><strong>IoT Sensor Layer:</strong> Robotic arm deployed in the field monitors soil pH, moisture, and nutrient levels. Camera captures crop images periodically.</p>
-              <p><strong>Gateway:</strong> Aggregates data from sensors and cameras, ensuring secure transmission to the cloud engine.</p>
-              <p><strong>Cloud AI Engine:</strong> Processes data using machine learning models — CNN for disease detection, predictive models for pest forecasting, explainable AI for growth monitoring.</p>
-              <p><strong>User Dashboard:</strong> Displays crop health status, soil condition alerts, and personalized treatment suggestions via mobile or web interface with voice output in local languages.</p>
-            </div>
-          </details>
-        </div>
-
-        <div class="domain-card reveal">
-          <details class="domain-dropdown">
-            <summary>
-              <!-- <span class="domain-icon">🗂️</span> -->
-              Domain Expertise &amp; Data
-              <span class="domain-arrow">▼</span>
-            </summary>
-            <div class="domain-body">
-              <p>This project requires interdisciplinary expertise spanning agricultural science, machine learning &amp; computer vision, IoT systems, and cloud engineering.</p>
-              <ul>
-                <li>Historical and real-time soil condition measurements (pH, moisture, nutrients)</li>
-                <li>Annotated images of pineapple plants with common diseases and pest damage</li>
-                <li>Local climate data to correlate environmental factors with crop health trends</li>
-              </ul>
-              <p>Collaboration with local farmers, agricultural extension officers, and research institutes is vital to gather domain knowledge and validate AI predictions.</p>
-            </div>
-          </details>
-        </div>
-
-        <div class="domain-card reveal">
-          <details class="domain-dropdown">
-            <summary>
-              <!-- <span class="domain-icon">🌍</span> -->
-              SDG Alignment &amp; Impact
-              <span class="domain-arrow">▼</span>
-            </summary>
-            <div class="domain-body">
-              <p>The expected outcome is an economically viable, easy-to-use tool that supports:</p>
-              <ul>
-                <li><strong>SDG 8</strong> — Decent Work and Economic Growth: empowering small-scale farmers with affordable precision agriculture tools</li>
-                <li><strong>SDG 9</strong> — Industry, Innovation, and Infrastructure: leveraging AI and IoT to innovate Sri Lankan agricultural infrastructure</li>
-              </ul>
-              <p>This project innovates by combining affordable sensors with AI algorithms tailored for local crops and farming conditions, ensuring practical adoption and scalability.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SYSTEM MODULES ===== -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header centered reveal">
-        <span class="section-label">System Components</span>
-        <h2 class="section-title">Four Core Modules</h2>
-        <p class="section-subtitle">
-          Each team member owns a dedicated module, contributing unique AI capabilities to the integrated platform.
-        </p>
-      </div>
-      <div class="modules-grid">
-        <div class="module-card reveal">
-          <div class="module-num">1</div>
-          <h4>IoT Soil Monitoring</h4>
-          <p>Mobile robotic arm with calibrated pH, moisture, and nutrient sensors. Wireless IoT transmission with instant voice output for hands-free farmer feedback.</p>
-        </div>
-        <div class="module-card reveal">
-          <div class="module-num">2</div>
-          <h4>AI Plant Disease Detection</h4>
-          <p>CNN-based model trained on localized Sri Lankan crop disease images. Offline-capable on mobile devices with voice-based diagnosis for low-literacy users.</p>
-        </div>
-        <div class="module-card reveal">
-          <div class="module-num">3</div>
-          <h4>Pest Outbreak Prediction</h4>
-          <p>Predictive AI fuses image analysis with environmental inputs. Real-time spoken risk alerts warn farmers of mealybug or pest outbreaks before damage occurs.</p>
-        </div>
-        <div class="module-card reveal">
-          <div class="module-num">4</div>
-          <h4>Stunted Growth Monitoring</h4>
-          <p>Grad-CAM explainable CNNs analyze farmer-submitted photos. Crowdsourced network detects regional threats and delivers voice alerts in native Sinhala/Tamil.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TECHNOLOGIES ===== -->
-  <div style="padding: 60px 0; background: var(--bg);">
-    <div class="tech-section">
-      <div class="tech-header">
-        <span class="section-label">Stack</span>
-        <h3>Technologies Used</h3>
-        <p>Combining machine learning, IoT, cloud computing, and mobile development for a complete agri-tech platform.</p>
-      </div>
-      <div class="tech-slider">
-        <div class="tech-track">
-        <div class="tech-item">
-          <img src="images/react.png" alt="ReactJs" />
-          <span>ReactJs</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/python.jpg" alt="Python" />
-          <span>Python</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/node.svg" alt="NodeJs" />
-          <span>NodeJs</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/express.png" alt="Express" />
-          <span>Express</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/fastapi.svg" alt="FastAPI" />
-          <span>FastAPI</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/mongodb.png" alt="MongoDB" />
-          <span>MongoDB</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/colab.png" alt="Google Colab" />
-          <span>Google Colab</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/pandas.png" alt="Pandas" />
-          <span>Pandas</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/opencv.png" alt="OpenCV" />
-          <span>OpenCV</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/tensorflow.png" alt="TensorFlow" />
-          <span>TensorFlow</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/scikit.png" alt="Scikit-learn" />
-          <span>Scikit-learn</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/roboflow.png" alt="Roboflow" />
-          <span>Roboflow</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/vscode.jpg" alt="VS Code" />
-          <span>VS Code</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/postman.png" alt="Postman" />
-          <span>Postman</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/github.jpg" alt="GitHub" />
-          <span>GitHub</span>
-        </div>
-
-        <!-- Duplicate set for seamless loop -->
-        <div class="tech-item">
-          <img src="images/react.png" alt="ReactJs" />
-          <span>ReactJs</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/python.jpg" alt="Python" />
-          <span>Python</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/node.svg" alt="NodeJs" />
-          <span>NodeJs</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/express.png" alt="Express" />
-          <span>Express</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/fastapi.svg" alt="FastAPI" />
-          <span>FastAPI</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/mongodb.png" alt="MongoDB" />
-          <span>MongoDB</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/colab.png" alt="Google Colab" />
-          <span>Google Colab</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/pandas.png" alt="Pandas" />
-          <span>Pandas</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/opencv.png" alt="OpenCV" />
-          <span>OpenCV</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/tensorflow.png" alt="TensorFlow" />
-          <span>TensorFlow</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/scikit.png" alt="Scikit-learn" />
-          <span>Scikit-learn</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/roboflow.png" alt="Roboflow" />
-          <span>Roboflow</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/vscode.jpg" alt="VS Code" />
-          <span>VS Code</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/postman.png" alt="Postman" />
-          <span>Postman</span>
-        </div>
-
-        <div class="tech-item">
-          <img src="images/github.jpg" alt="GitHub" />
-          <span>GitHub</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== OBJECTIVES ===== -->
-  <section class="section" id="objectives">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Objectives &amp; Novelty</span>
-        <h2 class="section-title">Research Objectives</h2>
-        <p class="section-subtitle">
-          <strong>Main Objective:</strong> Design and deploy an integrated AI and IoT-based Smart Agriculture Assistant
-          that automates crop health monitoring and soil quality assessment, providing real-time decision support to
-          farmers for improved productivity and sustainable farming.
-        </p>
-      </div>
-
-      <div class="objectives-grid">
-        <div class="obj-card reveal">
-          <div class="obj-member">M.A.C.S Marasingha · IT22254870</div>
-          <h4>IoT-Based Soil Monitoring Module</h4>
-          <p>Design and fabricate a robotic arm, integrate and calibrate soil pH, moisture, and nutrient sensors, develop IoT transmission with voice output, deploy and validate in test fields.</p>
-          <span class="novelty-chip">🤖 Mobile robotic arm for multi-point soil analysis</span>
-        </div>
-        <div class="obj-card reveal">
-          <div class="obj-member">Perera W.A.N.D · IT22072160</div>
-          <h4>AI-Powered Disease Detection</h4>
-          <p>Collect image datasets, train and test machine learning models, deploy detection via mobile or edge device, and enable spoken diagnosis for hands-free farmer use.</p>
-          <span class="novelty-chip">📱 Offline AI on mobile · spoken output</span>
-        </div>
-        <div class="obj-card reveal">
-          <div class="obj-member">Rathninda H.M.K.B.P.B · IT22275592</div>
-          <h4>AI-Powered Pest Infection Detection</h4>
-          <p>Conduct real field trials with local farmers, gather pest data, train predictive AI models that fuse images and environmental inputs, deploy real-time spoken risk alerts.</p>
-          <span class="novelty-chip">⚠️ Predicts outbreaks before damage occurs</span>
-        </div>
-        <div class="obj-card reveal">
-          <div class="obj-member">Thilakarathna VN · IT22336354</div>
-          <h4>AI-Powered Stunted Growth Monitoring</h4>
-          <p>Analyze farmer-submitted crop photos using explainable CNNs with Grad-CAM heatmaps to detect nutrient deficiencies and growth issues. Crowdsourced regional threat detection.</p>
-          <span class="novelty-chip">🗺️ Grad-CAM explainability · no costly hardware</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MILESTONES ===== -->
-  <section class="milestones-section" id="milestones">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Timeline</span>
-        <h2 class="section-title">Project Milestones</h2>
-        <p class="section-subtitle">Key checkpoints in our research journey from registration to final thesis submission.</p>
-      </div>
-
-      <div class="timeline">
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Group Registration</span>
-            <span class="timeline-date">16 May 2025</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Initial formation of the research group and registration for the IT4010 Research Project module.</p>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Find Research Topic &amp; Supervisor</span>
-            <span class="timeline-date">26 May 2025</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Selection of project supervisor Dr. Kapila Dissanayaka and finalization of the Smart Agriculture Assistant topic through initial research discussions.</p>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Topic Assessment Form</span>
-            <span class="timeline-date">17 Jun 2025</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Evaluation and approval of the selected research topic. Supervisor evaluated the scope, novelty, and feasibility — all criteria marked Yes.</p>
-            <span class="timeline-mark">✅ Completed</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Charter Submission</span>
-            <span class="timeline-date">23 Jul 2025</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Project charter submission including scope, objectives, timeline, and team responsibilities.</p>
-            <span class="timeline-mark">✅ Completed</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Project Proposal Report Submission</span>
-            <span class="timeline-date">15 Aug 2025</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Formal written proposal presenting research objectives, methodology, and expected outcomes.</p>
-            <span class="timeline-mark">✅ Completed</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Project Proposal Presentation</span>
-            <span class="timeline-date">9 Sep 2025</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Oral presentation of research objectives, methodology, and expected outcomes to the panel.</p>
-            <span class="timeline-mark">✅ Completed</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Progress Presentation 1</span>
-            <span class="timeline-date">5 Jan 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>First evaluation of project progress including research and initial implementation.</p>
-            <strong>Marks: 15%</strong>
-            <span class="timeline-mark">✅ Completed</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Checklist I</span>
-            <span class="timeline-date">11 Jan 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>First phase checklist confirming early development activities.</p>
-            <span class="timeline-mark">✅ Completed</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Progress Presentation 2</span>
-            <span class="timeline-date">10 Mar 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Second progress evaluation focusing on system implementation and module integration.</p>
-            <span class="timeline-mark">✅ Completed</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Draft Final Report &amp; Website Submission</span>
-            <span class="timeline-date">26 Apr 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Submission of the draft final research report and project website for evaluation.</p>
-            <span class="timeline-mark">🔄 In Progress</span>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Website Evaluation &amp; Log Book</span>
-            <span class="timeline-date">27 Apr 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Website evaluation and submission of project log book documenting weekly progress and team contributions.</p>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Final Presentation &amp; Viva</span>
-            <span class="timeline-date">28 Apr 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Final oral defense presenting the complete system to the panel.</p>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Research Paper Submission</span>
-            <span class="timeline-date">8 May 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Submission of the academic research paper for publication consideration.</p>
-          </div>
-        </details>
-
-        <details class="timeline-item reveal">
-          <summary>
-            <span class="timeline-dot"></span>
-            <span class="timeline-title">Final Thesis Submission</span>
-            <span class="timeline-date">13 May 2026</span>
-            <span class="timeline-chevron">▼</span>
-          </summary>
-          <div class="timeline-body">
-            <p>Complete final thesis and research paper publication evidence submission.</p>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== DOCUMENTS ===== -->
-  <section class="section" id="documents">
-    <div class="container">
-      <div class="section-header centered reveal">
-        <span class="section-label">Project Files</span>
-        <h2 class="section-title">Documents</h2>
-        <p class="section-subtitle">Access all project documents including proposals, checklists, research paper, and final reports.</p>
-      </div>
-
-      <div class="docs-grid">
-        <div class="doc-card reveal">
-          <div class="doc-icon-row">
-            <div class="doc-icon">📋</div>
-            <span class="doc-type-chip">PDF</span>
-            <span class="doc-status status-done">Completed</span>
-          </div>
-          <h3>Topic Assessment Form</h3>
-          <p>Initial evaluation of the selected research topic covering relevance, feasibility, innovation, and academic value before project development began. Project ID: 25-26J-389.</p>
-          <a href="https://drive.google.com/drive/folders/1j-4RGWMNhfJtZkexITBn1QTnYe9kaHHw?usp=sharing" target="_blank" class="doc-btn">View Document ↗</a>
-        </div>
-
-        <div class="doc-card reveal">
-          <div class="doc-icon-row">
-            <div class="doc-icon">📑</div>
-            <span class="doc-type-chip">PDF</span>
-            <span class="doc-status status-done">Completed</span>
-          </div>
-          <h3>Project Proposal Document</h3>
-          <p>Full research proposal presenting the problem background, objectives, methodology, system overview, and expected outcomes of the Smart Agriculture Assistant.</p>
-          <a href="https://drive.google.com/drive/folders/1mmoFH5N9uVhm0fg2xcMRqzGdWKmdR1hb?usp=sharing" target="_blank" class="doc-btn">View Document ↗</a>
-        </div>
-
-        <div class="doc-card reveal">
-            <div class="doc-icon-row">
-                <div class="doc-icon">✅</div>
-                <span class="doc-type-chip">Text</span>
-                <span class="doc-status status-done">Completed</span>
-            </div>
-
-            <h3>Checklist Documents</h3>
-
-            <p>
-                Combined checklist documents covering project requirements, progress tracking, completed tasks, evaluation criteria, and submission readiness across multiple project phases.
+    <section class="section" id="domain">
+        <div class="container">
+            <h2 class="section-title reveal">Research Domain</h2>
+            <p class="section-subtitle reveal">
+                This section presents the research background, identified gap, core problem,
+                objectives, and methodology behind the AI-based system developed for
+                Sri Lankan medicinal plants.
             </p>
 
-            <a href="https://drive.google.com/drive/folders/1-HC64CKzykdHjkW40hRm-8eRK7q9GRV1?usp=sharing" target="_blank" class="doc-btn">View Documents ↗</a>
-        </div>
+            <div class="domain-grid">
+                <div class="domain-card reveal">
+                    <details class="domain-dropdown">
+                        <summary>Literature Survey</summary>
+                        <div class="domain-content">
+                            <p>
+                                Modern agriculture has increasingly adopted Artificial Intelligence (AI), Internet of
+                                Things (IoT), machine learning, and cloud computing technologies to improve farming
+                                productivity and sustainability. Many previous studies highlight the use of IoT sensor
+                                networks to monitor soil moisture, pH levels, nutrient content, temperature, and
+                                humidity in real time. These systems help farmers optimize irrigation, fertilization,
+                                and field management practices. In parallel, computer vision techniques using
+                                Convolutional Neural Networks (CNNs) have been widely applied for automatic plant
+                                disease identification through leaf image analysis. Research has also introduced
+                                predictive analytics models for pest outbreaks, crop yield estimation, and climate-based
+                                decision support. Despite these advancements, many available solutions focus only on
+                                specific tasks and lack complete integration. Therefore, there is growing demand for
+                                smart agricultural platforms that combine multiple technologies into one efficient
+                                ecosystem.
+                            </p>
 
-        <div class="doc-card reveal">
-          <div class="doc-icon-row">
-            <div class="doc-icon">📖</div>
-            <span class="doc-type-chip">PDF</span>
-            <span class="doc-status status-done">Completed</span>
-          </div>
-          <h3>Research Paper</h3>
-          <p>Academic research findings including literature review, methodology, AI model analysis, implementation insights, results, and conclusions for publication.</p>
-          <a href="https://drive.google.com/drive/folders/1YlT9H2mLtp-xGDrBYVwG6DHChQfwesxy?usp=sharing" target="_blank" class="doc-btn">View Document ↗</a>
-        </div>
+                            <!-- <p class="domain-note">Source: Literature Review, pp. 1–2.</p> -->
+                        </div>
+                    </details>
+                </div>
 
-        <div class="doc-card reveal">
-          <div class="doc-icon-row">
-            <div class="doc-icon">📗</div>
-            <span class="doc-type-chip">PDF</span>
-            <span class="doc-status status-review">In Review</span>
-          </div>
-          <h3>Final Report</h3>
-          <p>Complete documentation of the project including full system design, implementation details, testing outcomes, and the overall final submission content.</p>
-          <a href="https://drive.google.com/drive/folders/1pM14kUwkdKUe8uIO3HwI7Jc-BPvMZncA?usp=sharing" target="_blank" class="doc-btn">View Document ↗</a>
-        </div>
+                <div class="domain-card reveal">
+                    <details class="domain-dropdown">
+                        <summary>Research Gap</summary>
+                        <div class="domain-content">
+                            <p>
+                                Although several smart agriculture systems have been developed, many of them are limited
+                                in functionality, affordability, and accessibility. Existing solutions often concentrate
+                                only on disease detection, pest monitoring, irrigation control, or soil analysis
+                                individually rather than providing a complete farming support system. In addition, most
+                                advanced platforms require expensive hardware, strong internet connectivity, or
+                                technical expertise, making them unsuitable for small and medium-scale farmers. Another
+                                key limitation is the lack of localized AI models trained for regional crops, climate
+                                conditions, and farming practices. Few systems also provide multilingual interfaces,
+                                voice guidance, or explainable AI outputs that help farmers understand recommendations.
+                                Hence, there is a clear research gap for a cost-effective, user-friendly, localized, and
+                                integrated smart agriculture assistant.
+                            </p>
 
-        <div class="doc-card reveal">
-          <div class="doc-icon-row">
-            <div class="doc-icon">📓</div>
-            <span class="doc-type-chip">PDF</span>
-            <span class="doc-status status-review">In Review</span>
-          </div>
-          <h3>Log Book Report</h3>
-          <p>Development journey record including weekly progress, team activities, task updates, and important milestones achieved throughout the research period.</p>
-          <a href="https://drive.google.com/drive/folders/1eAyphJVU8D_C4Nn2ByKyNMPg7A06XEJK?usp=sharing" target="_blank" class="doc-btn">View Document ↗</a>
+                            <!-- <p class="domain-note">Source: Literature Review, pp. 1–2; Introduction, p. 1.</p> -->
+                        </div>
+                    </details>
+                </div>
+
+                <div class="domain-card reveal">
+                    <details class="domain-dropdown">
+                        <summary>Research Problem</summary>
+                        <div class="domain-content">
+                            <p>
+                                Agriculture currently faces serious challenges due to climate change, unpredictable
+                                weather patterns, pest infestations, declining soil fertility, water scarcity, and
+                                increasing production costs. Traditional farming methods mainly rely on manual
+                                inspections and farmer experience, which can result in delayed disease identification,
+                                inefficient fertilizer use, poor pest control, and reduced crop yield. Farmers often
+                                lack access to timely information regarding soil health, plant growth conditions, and
+                                potential risks. This problem is more severe for small-scale farmers who cannot afford
+                                modern precision agriculture tools. Without intelligent support systems, farmers may
+                                experience crop losses, low profitability, and unsustainable farming practices.
+                                Therefore, there is a strong need for an affordable technology-driven solution that
+                                enables faster and smarter agricultural decision-making.
+                            </p>
+
+                            <!-- <p class="domain-note">Source: Abstract and Introduction, p. 1.</p> -->
+                        </div>
+                    </details>
+                </div>
+
+                <div class="domain-card reveal">
+                    <details class="domain-dropdown">
+                        <summary>Research Objectives</summary>
+                        <div class="domain-content">
+                            <ul>
+                                <li>
+                                    To develop a localized AI system that identifies crop species and evaluates visible
+                                    crop health conditions in Sri Lankan farming environments.
+                                </li>
+                                <li>
+                                    To detect and classify plant diseases, pest infestations, and abnormal growth
+                                    patterns for early intervention.
+                                </li>
+                                <li>
+                                    To provide practical decision support for soil management, fertilizer selection,
+                                    irrigation scheduling, and pest control.
+                                </li>
+                                <li>
+                                    To deploy the complete solution as a lightweight web platform that remains
+                                    accessible and useful for both rural and urban farming communities.
+                                </li>
+                            </ul>
+                            <p>
+                                The main objective of this research is to design and develop an AI-powered Smart
+                                Agriculture Assistant that supports farmers in improving productivity, reducing crop
+                                losses, and promoting sustainable farming practices. Specific objectives include
+                                developing an IoT-based soil monitoring system to measure pH, moisture, and nutrient
+                                levels in real time. Another objective is to implement AI-based crop disease detection
+                                using image processing techniques. The research also aims to create predictive models
+                                for pest outbreaks and abnormal crop growth patterns. Additionally, the system will
+                                provide real-time alerts, treatment recommendations, and decision support through a
+                                mobile or web application. A further objective is to ensure the solution remains
+                                affordable, scalable, and practical for local farming communities.
+                            </p>
+                            <!-- <p class="domain-note">Source: Abstract and Introduction, p. 1; Methodology, pp. 2–3.</p> -->
+                        </div>
+                    </details>
+                </div>
+
+                <div class="domain-card reveal">
+                    <details class="domain-dropdown">
+                        <summary>Methodology</summary>
+                        <div class="domain-content">
+                            <p>
+                                The research follows a system development methodology that integrates hardware,
+                                software, and artificial intelligence components. Initially, soil sensors will be
+                                deployed in agricultural fields to collect parameters such as moisture, pH, and nutrient
+                                levels. Simultaneously, crop images will be captured using cameras or smartphones for
+                                disease and growth analysis. Collected data will be transmitted to a cloud platform
+                                where machine learning and deep learning models process the information. CNN models will
+                                classify plant diseases, while predictive algorithms analyze pest risks and crop growth
+                                abnormalities. The processed outputs will then be displayed through a user-friendly
+                                dashboard or mobile application with alerts, charts, and recommendations. Finally, field
+                                testing, farmer feedback, and performance evaluation will be conducted to validate
+                                system accuracy, usability, and real-world effectiveness.
+                            </p>
+
+
+
+                            <h4 class="method-title">System Overview</h4>
+                            <img src="images/flow.png" class="method-img" alt="System Overview" />
+
+                            <h4 class="method-title">Workflow of Components</h4>
+
+                            <div class="method-grid">
+                                <img src="images/flow1.png" alt="Flowchart 1" />
+                                <!-- <img src="images/flow2.jpeg" alt="Flowchart 2" />
+                <img src="images/flow3.png" alt="Flowchart 3" />
+                <img src="images/flow4.png" alt="Flowchart 4" /> -->
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- ===== SYSTEM MODULES ===== -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header centered reveal">
+                <span class="section-label">System Components</span>
+                <h2 class="section-title">Four Core Modules</h2>
+                <p class="section-subtitle">
+                    Each team member owns a dedicated module, contributing unique AI capabilities to the integrated
+                    platform.
+                </p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card reveal">
+                    <div class="module-num">1</div>
+                    <h4>IoT Soil Monitoring</h4>
+                    <p>Mobile robotic arm with calibrated pH, moisture, and nutrient sensors. Wireless IoT transmission
+                        with instant voice output for hands-free farmer feedback.</p>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-num">2</div>
+                    <h4>AI Plant Disease Detection</h4>
+                    <p>CNN-based model trained on localized Sri Lankan crop disease images. Offline-capable on mobile
+                        devices with voice-based diagnosis for low-literacy users.</p>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-num">3</div>
+                    <h4>Pest Outbreak Prediction</h4>
+                    <p>Predictive AI fuses image analysis with environmental inputs. Real-time spoken risk alerts warn
+                        farmers of mealybug or pest outbreaks before damage occurs.</p>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-num">4</div>
+                    <h4>Stunted Growth Monitoring</h4>
+                    <p>Grad-CAM explainable CNNs analyze farmer-submitted photos. Crowdsourced network detects regional
+                        threats and delivers voice alerts in native Sinhala/Tamil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECHNOLOGIES ===== -->
+    <div style="padding: 60px 0; background: var(--bg);">
+        <div class="tech-section">
+            <div class="tech-header">
+                <span class="section-label">Stack</span>
+                <h3>Technologies Used</h3>
+                <p>Combining machine learning, IoT, cloud computing, and mobile development for a complete agri-tech
+                    platform.</p>
+            </div>
+            <div class="tech-slider">
+                <div class="tech-track">
+                    <div class="tech-item">
+                        <img src="images/react.png" alt="ReactJs" />
+                        <span>ReactJs</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/python.jpg" alt="Python" />
+                        <span>Python</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/node.svg" alt="NodeJs" />
+                        <span>NodeJs</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/express.png" alt="Express" />
+                        <span>Express</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/fastapi.svg" alt="FastAPI" />
+                        <span>FastAPI</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/mongodb.png" alt="MongoDB" />
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/colab.png" alt="Google Colab" />
+                        <span>Google Colab</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/pandas.png" alt="Pandas" />
+                        <span>Pandas</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/opencv.png" alt="OpenCV" />
+                        <span>OpenCV</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/tensorflow.png" alt="TensorFlow" />
+                        <span>TensorFlow</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/scikit.png" alt="Scikit-learn" />
+                        <span>Scikit-learn</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/roboflow.png" alt="Roboflow" />
+                        <span>Roboflow</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/vscode.jpg" alt="VS Code" />
+                        <span>VS Code</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/postman.png" alt="Postman" />
+                        <span>Postman</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/github.jpg" alt="GitHub" />
+                        <span>GitHub</span>
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="tech-item">
+                        <img src="images/react.png" alt="ReactJs" />
+                        <span>ReactJs</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/python.jpg" alt="Python" />
+                        <span>Python</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/node.svg" alt="NodeJs" />
+                        <span>NodeJs</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/express.png" alt="Express" />
+                        <span>Express</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/fastapi.svg" alt="FastAPI" />
+                        <span>FastAPI</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/mongodb.png" alt="MongoDB" />
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/colab.png" alt="Google Colab" />
+                        <span>Google Colab</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/pandas.png" alt="Pandas" />
+                        <span>Pandas</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/opencv.png" alt="OpenCV" />
+                        <span>OpenCV</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/tensorflow.png" alt="TensorFlow" />
+                        <span>TensorFlow</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/scikit.png" alt="Scikit-learn" />
+                        <span>Scikit-learn</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/roboflow.png" alt="Roboflow" />
+                        <span>Roboflow</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/vscode.jpg" alt="VS Code" />
+                        <span>VS Code</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/postman.png" alt="Postman" />
+                        <span>Postman</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="images/github.jpg" alt="GitHub" />
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- ===== SLIDES ===== -->
-  <section class="section section-alt" id="slides">
-    <div class="container">
-      <div class="section-header centered reveal">
-        <span class="section-label">Presentations</span>
-        <h2 class="section-title">Project Slides</h2>
-        <p class="section-subtitle">Access all project presentation decks from proposal through to final defense.</p>
-      </div>
-
-      <div class="slides-grid">
-        <div class="slide-card reveal">
-          <div class="slide-icon"><i data-lucide="file-text"></i></div>
-          <h3>Proposal Presentation</h3>
-          <div class="slide-tags">
-            <span>Overview</span><span>Architecture</span><span>Objectives</span>
-          </div>
-          <p>Introduction to the project covering research background, problem statement, main objectives, proposed system architecture, and overview of all four AI modules.</p>
-          <a href="https://drive.google.com/drive/folders/13MmhcaaOto9gqsjtqOAW01utVwG9uHAq?usp=sharing" target="_blank" class="slide-btn">View Slides ↗</a>
-        </div>
-
-        <div class="slide-card reveal">
-          <div class="slide-icon"><i data-lucide="chart-column-big"></i></div>
-          <h3>Progress Presentation 1</h3>
-          <div class="slide-tags">
-            <span>50% Complete</span><span>Progress</span><span>Roadmap</span>
-          </div>
-          <p>Demonstration of progress to the 50% milestone including initial implementation results, completed module features, and the development roadmap for remaining work.</p>
-          <a href="https://drive.google.com/drive/folders/14FV2E8Joi15azubDCETHcF5QBefTgqzG?usp=sharing" target="_blank" class="slide-btn">View Slides ↗</a>
-        </div>
-
-        <div class="slide-card reveal">
-          <div class="slide-icon"><i data-lucide="check-check"></i></div>
-          <h3>Progress Presentation 2</h3>
-          <div class="slide-tags">
-            <span>Modules</span><span>Integration</span><span>Implementation</span>
-          </div>
-          <p>Covers completion of all major AI components, module integration, and technical progress achieved. Presents a near-complete version of the full system with detailed workflows.</p>
-          <a href="https://drive.google.com/drive/folders/1QP_Lz71kwsWlHQlYNf5DrdzGS1PS6K5K?usp=sharing" target="_blank" class="slide-btn">View Slides ↗</a>
-        </div>
-
-        <div class="slide-card reveal">
-          <div class="slide-icon"><i data-lucide="presentation"></i></div>
-          <h3>Final Presentation</h3>
-          <div class="slide-tags">
-            <span>Full System</span><span>Results</span><span>Future Work</span>
-          </div>
-          <p>Complete explanation of the entire Smart Agriculture Assistant system, final results, challenges encountered during development, and potential future enhancements.</p>
-          <a href="https://drive.google.com/drive/folders/1pBTFrdskG5z9q5GMY-JoeV0augrHOeal?usp=sharing" target="_blank" class="slide-btn">View Slides ↗</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT / TEAM ===== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header centered reveal">
-        <span class="section-label">Our Team</span>
-        <h2 class="section-title">Meet the Researchers</h2>
-        <p class="section-subtitle">
-          A dedicated team of IT undergraduates from SLIIT, Sri Lanka, combining skills in AI, IoT, and software engineering
-          to tackle real-world agricultural challenges.
-        </p>
-      </div>
-
-      <!-- <div class="supervisor-grid">
-        <div class="member-card reveal">
-          <div class="member-img-wrap">
-            <div class="member-avatar">KD</div>
-          </div>
-          <div class="member-body">
-            <h4>Dr. Kapila Dissanayaka</h4>
-            <span class="member-role">Supervisor</span>
-            <p class="member-dept">Sri Lanka Institute of Information Technology</p>
-            <p class="member-email"><a href="mailto:kapila.d@sliit.lk">kapila.d@sliit.lk</a></p>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="team-grid">
-        <div class="member-card reveal">
-          <div class="member-img-wrap">
-            <img src="images/marasingha.png" alt="M.A.C.S Marasingha" class="member-img" loading="lazy" onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
-          </div>
-          <div class="member-body">
-            <h4>M.A.C.S Marasingha</h4>
-            <p class="member-dept">Dept. of Information Technology</p>
-            <span class="member-role">Research Team Member</span>
-            <p class="member-email"><a href="mailto:it22254870@my.sliit.lk">it22254870@my.sliit.lk</a></p>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              class="member-link">
-              LinkedIn <span>↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-card reveal">
-          <div class="member-img-wrap">
-            <img src="images/navoda.png" alt="Perera W.A.N.D" class="member-img" loading="lazy" onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
-          </div>
-          <div class="member-body">
-            <h4>Perera W.A.N.D</h4>
-            <p class="member-dept">Dept. of Information Technology</p>
-            <span class="member-role">Research Team Member</span>
-            <p class="member-email"><a href="mailto:it22072160@my.sliit.lk">it22072160@my.sliit.lk</a></p>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              class="member-link">
-              LinkedIn <span>↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-card reveal">
-          <div class="member-img-wrap">
-            <img src="images/banuka.png" alt="Rathninda H.M.K.B.P.B" class="member-img" loading="lazy" onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
-          </div>
-          <div class="member-body">
-            <h4>Rathninda H.M.K.B.P.B</h4>
-            <p class="member-dept">Dept. of Information Technology</p>
-            <span class="member-role">Research Team Member</span>
-            <p class="member-email"><a href="mailto:it22275592@my.sliit.lk">it22275592@my.sliit.lk</a></p>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              class="member-link">
-              LinkedIn <span>↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-card reveal">
-          <div class="member-img-wrap"> 
-            <img src="images/vishmitha.png" alt="Thilakarathna VN" class="member-img" loading="lazy" onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
-          </div>
-          <div class="member-body">
-            <h4>Thilakarathna VN</h4>
-            <p class="member-dept">Dept. of Information Technology</p>
-            <span class="member-role">Research Team Member</span>
-            <p class="member-email"><a href="mailto:it22336354@my.sliit.lk">it22336354@my.sliit.lk</a></p>
-            <a href="https://www.linkedin.com/in/vishmitha-thilakarathna-1922a42b5" target="_blank" rel="noopener noreferrer"
-              class="member-link">
-              LinkedIn <span>↗</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== DEMO ===== -->
-  <section class="section section-alt" id="demo">
-    <div class="container">
-      <div class="section-header centered reveal">
-        <span class="section-label">Project Story</span>
-        <h2 class="section-title">See AgriSense in Action</h2>
-        <p class="section-subtitle">A visual walkthrough of our research journey — field data collection, AI model development, and the final system demo.</p>
-      </div>
-
-      <div class="demo-card reveal">
-        <div class="demo-info">
-          <span class="section-label">Featured Video</span>
-          <h3>Smart Agriculture Assistant — Project Demo</h3>
-          <p>This video presents our complete project journey: field data collection with the IoT robotic arm, AI model training sessions, mobile app testing on real crop images, and the final integrated system demonstration.</p>
-          <div class="demo-tags">
-            <span>🤖 IoT Field Tests</span>
-            <span>🌿 AI Diagnosis Demo</span>
-            <span>📊 Results Showcase</span>
-          </div>
-          <a href="#" target="_blank" class="btn-hero btn-hero-primary" style="display:inline-flex;">
-            Watch Full Video ↗
-          </a>
-        </div>
-        <div class="demo-thumb">
-          <div class="demo-thumb-inner">
-            <a href="#" target="_blank" class="play-btn" aria-label="Watch video">▶</a>
-            <p class="demo-label-text">Click to watch the project demo</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header centered reveal">
-        <span class="section-label">Get in Touch</span>
-        <h2 class="section-title">Contact Us</h2>
-        <p class="section-subtitle">Have questions about the research, collaboration opportunities, or the project? Reach out to our team.</p>
-      </div>
-
-      <div class="contact-wrapper">
-        <div class="contact-info reveal">
-          <h3>Contact Information</h3>
-          <div class="contact-item">
-            <span>📧</span>
-            <div>
-              <strong>Email</strong>
-              <p>agrisence.sliit@gmail.com</p>
+    <!-- ===== OBJECTIVES ===== -->
+    <section class="section" id="objectives">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Objectives &amp; Novelty</span>
+                <h2 class="section-title">Research Objectives</h2>
+                <p class="section-subtitle">
+                    <strong>Main Objective:</strong> Design and deploy an integrated AI and IoT-based Smart Agriculture
+                    Assistant
+                    that automates crop health monitoring and soil quality assessment, providing real-time decision
+                    support to
+                    farmers for improved productivity and sustainable farming.
+                </p>
             </div>
-          </div>
-          <div class="contact-item">
-            <span>📞</span>
-            <div>
-              <strong>Phone</strong>
-              <p>+94 77 9710 453</p>
+
+            <div class="objectives-grid">
+                <div class="obj-card reveal">
+                    <div class="obj-member">M.A.C.S Marasingha · IT22254870</div>
+                    <h4>IoT-Based Soil Monitoring Module</h4>
+                    <p>Design and fabricate a robotic arm, integrate and calibrate soil pH, moisture, and nutrient
+                        sensors, develop IoT transmission with voice output, deploy and validate in test fields.</p>
+                    <span class="novelty-chip">🤖 Mobile robotic arm for multi-point soil analysis</span>
+                </div>
+                <div class="obj-card reveal">
+                    <div class="obj-member">Perera W.A.N.D · IT22072160</div>
+                    <h4>AI-Powered Disease Detection</h4>
+                    <p>Collect image datasets, train and test machine learning models, deploy detection via mobile or
+                        edge device, and enable spoken diagnosis for hands-free farmer use.</p>
+                    <span class="novelty-chip">📱 Offline AI on mobile · spoken output</span>
+                </div>
+                <div class="obj-card reveal">
+                    <div class="obj-member">Rathninda H.M.K.B.P.B · IT22275592</div>
+                    <h4>AI-Powered Pest Infection Detection</h4>
+                    <p>Conduct real field trials with local farmers, gather pest data, train predictive AI models that
+                        fuse images and environmental inputs, deploy real-time spoken risk alerts.</p>
+                    <span class="novelty-chip">⚠️ Predicts outbreaks before damage occurs</span>
+                </div>
+                <div class="obj-card reveal">
+                    <div class="obj-member">Thilakarathna VN · IT22336354</div>
+                    <h4>AI-Powered Stunted Growth Monitoring</h4>
+                    <p>Analyze farmer-submitted crop photos using explainable CNNs with Grad-CAM heatmaps to detect
+                        nutrient deficiencies and growth issues. Crowdsourced regional threat detection.</p>
+                    <span class="novelty-chip">🗺️ Grad-CAM explainability · no costly hardware</span>
+                </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <span>📍</span>
-            <div>
-              <strong>Address</strong>
-              <p>Sri Lanka Institute of Information Technology</p>
-            </div>
-          </div>
-          
-          
         </div>
+    </section>
 
-        <div class="contact-form-card reveal">
-          <h3>Send a Message</h3>
-          <form id="contact-form" novalidate>
-            <div class="form-group">
-              <input type="text"  name="user_name"  placeholder="Your Name"  required />
+    <!-- ===== MILESTONES ===== -->
+    <section class="milestones-section" id="milestones">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Timeline</span>
+                <h2 class="section-title">Project Milestones</h2>
+                <p class="section-subtitle">Key checkpoints in our research journey from registration to final thesis
+                    submission.</p>
             </div>
-            <div class="form-group">
-              <input type="email" name="user_email" placeholder="Your Email" required />
+
+            <div class="timeline">
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Group Registration</span>
+                        <span class="timeline-date">16 May 2025</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Initial formation of the research group and registration for the IT4010 Research Project
+                            module.</p>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Find Research Topic &amp; Supervisor</span>
+                        <span class="timeline-date">26 May 2025</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Selection of project supervisor Dr. Kapila Dissanayaka and finalization of the Smart
+                            Agriculture Assistant topic through initial research discussions.</p>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Topic Assessment Form</span>
+                        <span class="timeline-date">17 Jun 2025</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Evaluation and approval of the selected research topic. Supervisor evaluated the scope,
+                            novelty, and feasibility — all criteria marked Yes.</p>
+                        <span class="timeline-mark">✅ Completed</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Charter Submission</span>
+                        <span class="timeline-date">23 Jul 2025</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Project charter submission including scope, objectives, timeline, and team responsibilities.
+                        </p>
+                        <span class="timeline-mark">✅ Completed</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Project Proposal Report Submission</span>
+                        <span class="timeline-date">15 Aug 2025</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Formal written proposal presenting research objectives, methodology, and expected outcomes.
+                        </p>
+                        <span class="timeline-mark">✅ Completed</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Project Proposal Presentation</span>
+                        <span class="timeline-date">9 Sep 2025</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Oral presentation of research objectives, methodology, and expected outcomes to the panel.
+                        </p>
+                        <span class="timeline-mark">✅ Completed</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Progress Presentation 1</span>
+                        <span class="timeline-date">5 Jan 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>First evaluation of project progress including research and initial implementation.</p>
+                        <strong>Marks: 15%</strong>
+                        <span class="timeline-mark">✅ Completed</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Checklist I</span>
+                        <span class="timeline-date">11 Jan 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>First phase checklist confirming early development activities.</p>
+                        <span class="timeline-mark">✅ Completed</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Progress Presentation 2</span>
+                        <span class="timeline-date">10 Mar 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Second progress evaluation focusing on system implementation and module integration.</p>
+                        <span class="timeline-mark">✅ Completed</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Draft Final Report &amp; Website Submission</span>
+                        <span class="timeline-date">26 Apr 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Submission of the draft final research report and project website for evaluation.</p>
+                        <span class="timeline-mark">🔄 In Progress</span>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Website Evaluation &amp; Log Book</span>
+                        <span class="timeline-date">27 Apr 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Website evaluation and submission of project log book documenting weekly progress and team
+                            contributions.</p>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Final Presentation &amp; Viva</span>
+                        <span class="timeline-date">28 Apr 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Final oral defense presenting the complete system to the panel.</p>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Research Paper Submission</span>
+                        <span class="timeline-date">8 May 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Submission of the academic research paper for publication consideration.</p>
+                    </div>
+                </details>
+
+                <details class="timeline-item reveal">
+                    <summary>
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-title">Final Thesis Submission</span>
+                        <span class="timeline-date">13 May 2026</span>
+                        <span class="timeline-chevron">▼</span>
+                    </summary>
+                    <div class="timeline-body">
+                        <p>Complete final thesis and research paper publication evidence submission.</p>
+                    </div>
+                </details>
             </div>
-            <div class="form-group">
-              <input type="text"  name="subject"    placeholder="Subject"    required />
-            </div>
-            <div class="form-group">
-              <textarea name="message" placeholder="Write your message here..." required></textarea>
-            </div>
-            <button type="submit" class="contact-btn">Send Message</button>
-            <p id="form-status" class="form-status"></p>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-logo">Agri<span>Sense</span></p>
-      <p>© 2026 Smart Agriculture Assistant Research Project &nbsp;·&nbsp; SLIIT, Sri Lanka &nbsp;·&nbsp; IT4010 – 25-26J-389</p>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#domain">Research</a>
-        <a href="#documents">Documents</a>
-        <a href="#about">Team</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </footer>
+    <!-- ===== DOCUMENTS ===== -->
+    <section class="section" id="documents">
+        <div class="container">
+            <div class="section-header centered reveal">
+                <span class="section-label">Project Files</span>
+                <h2 class="section-title">Documents</h2>
+                <p class="section-subtitle">Access all project documents including proposals, checklists, research
+                    paper, and final reports.</p>
+            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="script.js"></script>
+            <div class="docs-grid">
+                <div class="doc-card reveal">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📋</div>
+                        <span class="doc-type-chip">PDF</span>
+                        <span class="doc-status status-done">Completed</span>
+                    </div>
+                    <h3>Topic Assessment Form</h3>
+                    <p>Initial evaluation of the selected research topic covering relevance, feasibility, innovation,
+                        and academic value before project development began. Project ID: 25-26J-389.</p>
+                    <a href="https://drive.google.com/drive/folders/1j-4RGWMNhfJtZkexITBn1QTnYe9kaHHw?usp=sharing"
+                        target="_blank" class="doc-btn">View Document ↗</a>
+                </div>
+
+                <div class="doc-card reveal">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📑</div>
+                        <span class="doc-type-chip">PDF</span>
+                        <span class="doc-status status-done">Completed</span>
+                    </div>
+                    <h3>Project Proposal Document</h3>
+                    <p>Full research proposal presenting the problem background, objectives, methodology, system
+                        overview, and expected outcomes of the Smart Agriculture Assistant.</p>
+                    <a href="https://drive.google.com/drive/folders/1mmoFH5N9uVhm0fg2xcMRqzGdWKmdR1hb?usp=sharing"
+                        target="_blank" class="doc-btn">View Document ↗</a>
+                </div>
+
+                <div class="doc-card reveal">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">✅</div>
+                        <span class="doc-type-chip">Text</span>
+                        <span class="doc-status status-done">Completed</span>
+                    </div>
+
+                    <h3>Checklist Documents</h3>
+
+                    <p>
+                        Combined checklist documents covering project requirements, progress tracking, completed tasks,
+                        evaluation criteria, and submission readiness across multiple project phases.
+                    </p>
+
+                    <a href="https://drive.google.com/drive/folders/1-HC64CKzykdHjkW40hRm-8eRK7q9GRV1?usp=sharing"
+                        target="_blank" class="doc-btn">View Documents ↗</a>
+                </div>
+
+                <div class="doc-card reveal">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📖</div>
+                        <span class="doc-type-chip">PDF</span>
+                        <span class="doc-status status-done">Completed</span>
+                    </div>
+                    <h3>Research Paper</h3>
+                    <p>Academic research findings including literature review, methodology, AI model analysis,
+                        implementation insights, results, and conclusions for publication.</p>
+                    <a href="https://drive.google.com/drive/folders/1YlT9H2mLtp-xGDrBYVwG6DHChQfwesxy?usp=sharing"
+                        target="_blank" class="doc-btn">View Document ↗</a>
+                </div>
+
+                <div class="doc-card reveal">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📗</div>
+                        <span class="doc-type-chip">PDF</span>
+                        <span class="doc-status status-review">In Review</span>
+                    </div>
+                    <h3>Final Report</h3>
+                    <p>Complete documentation of the project including full system design, implementation details,
+                        testing outcomes, and the overall final submission content.</p>
+                    <a href="https://drive.google.com/drive/folders/1pM14kUwkdKUe8uIO3HwI7Jc-BPvMZncA?usp=sharing"
+                        target="_blank" class="doc-btn">View Document ↗</a>
+                </div>
+
+                <div class="doc-card reveal">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📓</div>
+                        <span class="doc-type-chip">PDF</span>
+                        <span class="doc-status status-review">In Review</span>
+                    </div>
+                    <h3>Log Book Report</h3>
+                    <p>Development journey record including weekly progress, team activities, task updates, and
+                        important milestones achieved throughout the research period.</p>
+                    <a href="https://drive.google.com/drive/folders/1eAyphJVU8D_C4Nn2ByKyNMPg7A06XEJK?usp=sharing"
+                        target="_blank" class="doc-btn">View Document ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SLIDES ===== -->
+    <section class="section section-alt" id="slides">
+        <div class="container">
+            <div class="section-header centered reveal">
+                <span class="section-label">Presentations</span>
+                <h2 class="section-title">Project Slides</h2>
+                <p class="section-subtitle">Access all project presentation decks from proposal through to final
+                    defense.</p>
+            </div>
+
+            <div class="slides-grid">
+                <div class="slide-card reveal">
+                    <div class="slide-icon"><i data-lucide="file-text"></i></div>
+                    <h3>Proposal Presentation</h3>
+                    <div class="slide-tags">
+                        <span>Overview</span><span>Architecture</span><span>Objectives</span>
+                    </div>
+                    <p>Introduction to the project covering research background, problem statement, main objectives,
+                        proposed system architecture, and overview of all four AI modules.</p>
+                    <a href="https://drive.google.com/drive/folders/13MmhcaaOto9gqsjtqOAW01utVwG9uHAq?usp=sharing"
+                        target="_blank" class="slide-btn">View Slides ↗</a>
+                </div>
+
+                <div class="slide-card reveal">
+                    <div class="slide-icon"><i data-lucide="chart-column-big"></i></div>
+                    <h3>Progress Presentation 1</h3>
+                    <div class="slide-tags">
+                        <span>50% Complete</span><span>Progress</span><span>Roadmap</span>
+                    </div>
+                    <p>Demonstration of progress to the 50% milestone including initial implementation results,
+                        completed module features, and the development roadmap for remaining work.</p>
+                    <a href="https://drive.google.com/drive/folders/14FV2E8Joi15azubDCETHcF5QBefTgqzG?usp=sharing"
+                        target="_blank" class="slide-btn">View Slides ↗</a>
+                </div>
+
+                <div class="slide-card reveal">
+                    <div class="slide-icon"><i data-lucide="check-check"></i></div>
+                    <h3>Progress Presentation 2</h3>
+                    <div class="slide-tags">
+                        <span>Modules</span><span>Integration</span><span>Implementation</span>
+                    </div>
+                    <p>Covers completion of all major AI components, module integration, and technical progress
+                        achieved. Presents a near-complete version of the full system with detailed workflows.</p>
+                    <a href="https://drive.google.com/drive/folders/1QP_Lz71kwsWlHQlYNf5DrdzGS1PS6K5K?usp=sharing"
+                        target="_blank" class="slide-btn">View Slides ↗</a>
+                </div>
+
+                <div class="slide-card reveal">
+                    <div class="slide-icon"><i data-lucide="presentation"></i></div>
+                    <h3>Final Presentation</h3>
+                    <div class="slide-tags">
+                        <span>Full System</span><span>Results</span><span>Future Work</span>
+                    </div>
+                    <p>Complete explanation of the entire Smart Agriculture Assistant system, final results, challenges
+                        encountered during development, and potential future enhancements.</p>
+                    <a href="https://drive.google.com/drive/folders/1pBTFrdskG5z9q5GMY-JoeV0augrHOeal?usp=sharing"
+                        target="_blank" class="slide-btn">View Slides ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT / TEAM ===== -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about-header reveal">
+                <span class="about-label">Our Research Team</span>
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">
+                    Meet the dedicated team behind AgriSense, committed to combining
+                    artificial intelligence with Sri Lankan agriculture.
+                </p>
+                <p class="about-university">Sri Lanka Institute of Information Technology Malabe, Sri Lanka</p>
+            </div>
+
+            <div class="about-grid team-grid">
+                <div class="member-card reveal">
+                    <div class="member-image-wrap">
+                        <img src="images/marasingha.png" alt="M.A.C.S Marasingha" class="member-img" loading="lazy"
+                            onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
+                    </div>
+                    <div class="member-info">
+                        <h4>M.A.C.S Marasingha</h4>
+                        <p class="member-dep">Dept. of Information Technology</p>
+                        <span class="member-role">Research Team Member</span>
+                        <p class="member-email"><a href="mailto:it22254870@my.sliit.lk">it22254870@my.sliit.lk</a></p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="member-link">
+                            LinkedIn <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member-card reveal">
+                    <div class="member-image-wrap">
+                        <img src="images/navoda.png" alt="Perera W.A.N.D" class="member-img" loading="lazy"
+                            onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
+                    </div>
+                    <div class="member-info">
+                        <h4>Perera W.A.N.D</h4>
+                        <p class="member-dep">Dept. of Information Technology</p>
+                        <span class="member-role">Research Team Member</span>
+                        <p class="member-email"><a href="mailto:it22072160@my.sliit.lk">it22072160@my.sliit.lk</a></p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="member-link">
+                            LinkedIn <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member-card reveal">
+                    <div class="member-image-wrap">
+                        <img src="images/banuka.png" alt="Rathninda H.M.K.B.P.B" class="member-img" loading="lazy"
+                            onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
+                    </div>
+                    <div class="member-info">
+                        <h4>Rathninda H.M.K.B.P.B</h4>
+                        <p class="member-dep">Dept. of Information Technology</p>
+                        <span class="member-role">Research Team Member</span>
+                        <p class="member-email"><a href="mailto:it22275592@my.sliit.lk">it22275592@my.sliit.lk</a></p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="member-link">
+                            LinkedIn <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member-card reveal">
+                    <div class="member-image-wrap">
+                        <img src="images/vishmitha.png" alt="Thilakarathna VN" class="member-img" loading="lazy"
+                            onerror="this.onerror=null;this.src='images/avatar-placeholder.svg';" />
+                    </div>
+                    <div class="member-info">
+                        <h4>Thilakarathna VN</h4>
+                        <p class="member-dep">Dept. of Information Technology</p>
+                        <span class="member-role">Research Team Member</span>
+                        <p class="member-email"><a href="mailto:it22336354@my.sliit.lk">it22336354@my.sliit.lk</a></p>
+                        <a href="https://www.linkedin.com/in/vishmitha-thilakarathna-1922a42b5" target="_blank"
+                            rel="noopener noreferrer" class="member-link">
+                            LinkedIn <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEMO ===== -->
+    <section class="section section-alt" id="demo">
+        <div class="container">
+            <div class="section-header centered reveal">
+                <span class="section-label">Project Story</span>
+                <h2 class="section-title">See AgriSense in Action</h2>
+                <p class="section-subtitle">A visual walkthrough of our research journey — field data collection, AI
+                    model development, and the final system demo.</p>
+            </div>
+
+            <div class="demo-card reveal">
+                <div class="demo-info">
+                    <span class="section-label">Featured Video</span>
+                    <h3>Smart Agriculture Assistant — Project Demo</h3>
+                    <p>This video presents our complete project journey: field data collection with the IoT robotic arm,
+                        AI model training sessions, mobile app testing on real crop images, and the final integrated
+                        system demonstration.</p>
+                    <div class="demo-tags">
+                        <span>🤖 IoT Field Tests</span>
+                        <span>🌿 AI Diagnosis Demo</span>
+                        <span>📊 Results Showcase</span>
+                    </div>
+                    <a href="#" target="_blank" class="btn-hero btn-hero-primary" style="display:inline-flex;">
+                        Watch Full Video ↗
+                    </a>
+                </div>
+                <div class="demo-thumb">
+                    <div class="demo-thumb-inner">
+                        <a href="#" target="_blank" class="play-btn" aria-label="Watch video">▶</a>
+                        <p class="demo-label-text">Click to watch the project demo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header centered reveal">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Have questions about the research, collaboration opportunities, or the
+                    project? Reach out to our team.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>agrisence.sliit@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+94 77 9710 453</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="contact-form-card reveal">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <input type="text" name="user_name" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="user_email" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="contact-btn">Send Message</button>
+                        <p id="form-status" class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-logo">Agri<span>Sense</span></p>
+            <p>© 2026 Smart Agriculture Assistant Research Project &nbsp;·&nbsp; SLIIT, Sri Lanka &nbsp;·&nbsp; IT4010 –
+                25-26J-389</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#domain">Research</a>
+                <a href="#documents">Documents</a>
+                <a href="#about">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
